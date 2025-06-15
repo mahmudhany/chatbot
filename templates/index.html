@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>كيان - مساعد ADHD</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>كيان</h1>
+            <p>مساعدك الذكي لاضطراب فرط الحركة وتشتت الانتباه (ADHD)</p>
+        </header>
+        
+        <div class="chat-container">
+            <div class="chat-messages" id="chat-messages">
+                <div class="message bot-message">
+                    <p>مرحباً! أنا كيان، مساعدك الخاص لاضطراب فرط الحركة وتشتت الانتباه (ADHD).</p>
+                    <p>كيف يمكنني مساعدتك اليوم؟</p>
+                </div>
+            </div>
+            
+           <div class="typing-indicator" id="typing-indicator">
+    <div class="typing-dots">
+        <div class="typing-dot"></div>
+        <div class="typing-dot"></div>
+        <div class="typing-dot"></div>
+    </div>
+</div>
+            
+            <div class="input-area">
+                <input type="text" id="user-input" placeholder="اكتب سؤالك هنا..." autocomplete="off">
+                <button id="send-btn"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
